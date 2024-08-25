@@ -1,0 +1,110 @@
+#wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    
+                        "header header header"
+                        "nestedgrid1 nestedgrid1 nestedgrid1"
+                        "piano1 cat familypic"
+                        "pho sunset books"
+                        "footer footer footer"; 
+}
+
+#title{
+    font-size: 18px;
+    color: #B7410E;
+}
+
+#header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "bdsclogo title title";
+    align-items: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+}
+
+#bdsclogo{
+    grid-area: bdsclogo;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+div{
+    text-align: center;
+}
+
+
+#header{
+    grid-area: header;
+    font-weight: bold;
+}
+
+#nestedgrid1{
+    grid-area:nestedgrid1;
+    display:grid;
+    grid-template-areas:"home aboutme gallery hobbies culture";
+    background-color:rgb(100, 161, 212);
+    padding:20px;
+    color:white;
+}
+
+#home{grid-area: home;}
+
+#aboutme{grid-area: aboutme;}
+
+#gallery{grid-area: gallery;}
+
+#hobbies{grid-area: hobbies;}
+
+#culture{grid-area: culture;}
+
+#piano1{
+    grid-area: piano1;
+    padding:20px;
+}
+
+#cat{
+    grid-area:cat;
+    padding:20px;
+}
+
+#familypic{
+    grid-area:familypic;
+    padding:20px;
+}
+
+#pho{
+    grid-area: pho;
+    padding:20px;
+}
+
+#sunset{
+    grid-area: sunset;
+    padding:20px;
+}
+
+#books{
+    grid-area: books;
+    padding:20px;
+}
+    
+#footer{
+    grid-area: footer;
+    background-color:rgb(100, 161, 212);
+    color:white;
+    padding:10px;
+    justify-content: space-around;
+}
+
+#footer span {
+    margin: 0 10px;
+}
